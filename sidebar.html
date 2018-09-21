@@ -1,0 +1,887 @@
+<head>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=10">
+</head>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=10">
+  <script type="text/javascript" scr="http://code.jquery.com/jquery-1.8.2.js"></script>
+
+
+  <script type="text/javascript">
+    $("meta[http-equiv='X-UA-Compatible']").attr("content", "IE=10");
+    $("meta[http-equiv='X-UA-Compatible']").replaceWith('<meta http-equiv="X-UA-Compatible" content="IE=10">');
+  </script>
+
+  <!--[if lt IE 9]>
+	<script src="/workspaces/office2016tips/Documents/html5shiv.js"></script>
+<![endif]-->
+
+</head>
+<style>
+  /*
+
+.sidebar {
+	OVERFLOW: hidden;
+	BORDER-TOP: black 1px solid;
+	BORDER-RIGHT: black 1px solid;
+	WIDTH: 180px;
+	BACKGROUND: #eee;
+	OVERFLOW-X: hidden;
+	BORDER-BOTTOM: black 1px solid;
+	POSITION: fixed;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px;
+	PADDING-LEFT: 0px;
+	LEFT: 15px;
+	MARGIN: auto;
+	BORDER-LEFT: black 1px solid;
+	Z-INDEX: 1;
+	TOP: 280px;
+	border-radius: 25px;
+	box-shadow: 10px 10px;
+	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=10, OffY=10, Color='#33000000');
+	-moz-box-shadow:0 0 8px 0 black;
+	-webkit-box-shadow:0 0 8px 0 black;
+
+}
+
+
+.acc-menu, .acc-menu ul{
+  line-height:1.5;
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.acc-menu{
+  margin-left:-1.5em;
+}
+.acc-menu > li{
+  padding-left:1.5em;
+  margin-bottom:0.5em;
+}
+.acc-menu li a{
+  display:block;
+  padding:0.25em;
+  background:rgb(230,230,230);
+  color:#444;
+  text-decoration:none;
+}
+.acc-menu li a:hover{
+  background:rgb(130,130,130);
+}
+.acc-menu > li > a{
+    background:red;
+    color:white;
+    font-weight:bold;
+}
+.acc-menu > li > a:hover{
+  background:darkred;
+}
+.acc-menu input[type="checkbox"] ~ ul li,
+.acc-menu input[type="checkbox"].current:checked ~ ul li{
+  height:0;
+  overflow:hidden;
+  transition:.2s ease-in;
+}
+.acc-menu input[type="checkbox"]:checked ~ ul li,
+.acc-menu input[type="checkbox"].current ~ ul li{
+  height:auto;
+}
+.acc-menu input[type="checkbox"]{
+  display:none;
+}
+.acc-menu label{
+  display:block;
+  float:left;
+  content:"";
+  margin-left:-1.5em;
+  width:1.5em;
+  padding:0.25em;
+  text-align:center;
+  background:blue;
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+}
+.acc-menu  label:hover{
+  background:darkred;
+}
+.acc-menu  label:before,
+/*This flip-reverses the label */
+
+  /*
+.acc-menu input[type="checkbox"]:checked.current  ~ label:before{
+  content:"+";
+}
+.acc-menu input[type="checkbox"]:checked ~ label:before,
+.acc-menu input[type="checkbox"].current  ~ label:before{
+  content:"-";
+}
+
+/*
+ Only custom marker for summary/details
+ For cross browser compatible styling hide Firefox's marker by setting summary { display: block }
+ and Chrome and Safari's marker by setting ::-webkit-details-marker {display: none;}
+*/
+  /*summary {
+  display: block;
+  cursor: pointer;
+  outline: 0;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+  }
+
+body {
+  background-color: #191c1e;
+  color: white;
+  font-size: 1.6rem;
+  font-family: arial;
+  margin: 0;
+  padding: 3rem;
+}
+
+
+.tree-nav__item {
+  display: block;
+  white-space: nowrap;
+  color: #ccc;
+  position: relative;
+}
+.tree-nav__item.is-expandable::before {
+  border-left: 1px solid #333;
+  content: "";
+  height: 100%;
+  left: 0.8rem;
+  position: absolute;
+  top: 2.4rem;
+  height: calc(100% - 2.4rem);
+}
+.tree-nav__item .tree-nav__item {
+  margin-left: 2.4rem;
+}
+.tree-nav__item.is-expandable[open] > .tree-nav__item-title::before {
+  font-family: "ionicons";
+  transform: rotate(90deg);
+}
+.tree-nav__item.is-expandable > .tree-nav__item-title {
+  padding-left: 2.4rem;
+}
+.tree-nav__item.is-expandable > .tree-nav__item-title::before {
+  position: absolute;
+  will-change: transform;
+  transition: transform 300ms ease;
+  font-family: "ionicons";
+  color: #fff;
+  font-size: 1.1rem;
+  content: "\f125";
+  left: 0;
+  display: inline-block;
+  width: 1.6rem;
+  text-align: center;
+}
+
+.tree-nav__item-title {
+  cursor: pointer;
+  display: block;
+  outline: 0;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 3.2rem;
+}
+.tree-nav__item-title .icon {
+  display: inline;
+  padding-left: 1.6rem;
+  margin-right: 0.8rem;
+  color: #666;
+  font-size: 1.4rem;
+  position: relative;
+}
+.tree-nav__item-title .icon::before {
+  top: 0;
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 1.6rem;
+  text-align: center;
+}
+
+.tree-nav__item-title::-webkit-details-marker {
+  display: none;
+}
+</style>
+
+
+
+<!--<div class="sidebar">
+<h2>Menu</h2>
+
+  <ul class="acc-menu">
+  <li class="parent">
+   <input type="checkbox" name="accordion" id="acc-1"/>
+   <label for="acc-1"></label>
+    <a href="#">Parent Category</a>
+    <ul>
+      <li><a href="#">Child Category</a></li>
+      <li><a href="#">The Middle Child</a></li>
+      <li><a href="#">The Golden Child</a></li>
+    </ul>
+  </li>
+   <li class="parent"><a href="#">Parent Category No Kids</a></li>
+  <li class="parent"><a href="#">Parent Category No Kids</a></li>
+  <li class="parent">
+   <input class="current" type="checkbox" name="accordion" id="acc-2"/>
+   <label for="acc-2"></label>
+    <a href="#">Parent Category</a>
+    <ul>
+      <li><a href="#">Child Category</a></li>
+      <li><a href="#">The Middle Child</a></li>
+      <li><a href="#">The Golden Child</a></li>
+    </ul>
+  </li>
+  <li class="parent"><a href="#">Parent Category No Kids</a></li>
+ <li class="parent">
+   <input type="checkbox" name="accordion" id="acc-3"/>
+   <label for="acc-3"></label>
+    <a href="#">Parent Category</a>
+    <ul>
+      <li><a href="#">Child Category</a></li>
+      <li><a href="#">The Middle Child</a></li>
+      <li><a href="#">The Golden Child</a></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+
+<html>
+  <head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+
+
+<nav class="tree-nav">
+
+  <a class="tree-nav__item-title">
+    <i class="icon ion-scissors"></i>
+    THE INHERITANCE
+  </a>
+  <a class="tree-nav__item-title">
+    <i class="icon ion-android-star"></i>
+    The Willful Princess and the Piebald Prince
+  </a>
+
+  <details class="tree-nav__item is-expandable">
+    <summary class="tree-nav__item-title">The Realm of the Elderlings</summary>
+    <details class="tree-nav__item is-expandable">
+
+      <summary class="tree-nav__item-title">The Six Duchies</summary>
+      <details class="tree-nav__item is-expandable">
+        <summary class="tree-nav__item-title">The Farseer Trilogy</summary>
+        <div class="tree-nav__item">
+          <a class="tree-nav__item-title"><i class="icon ion-ios-bookmarks"></i> Assassin’s Apprentice</a>
+          <a class="tree-nav__item-title"><i class="icon ion-ios-book"></i> Royal Assasin</a>
+          <a class="tree-nav__item-title"><i class="icon ion-android-bookmark"></i> Assassin's Quest</a>
+        </div>
+      </details>
+
+      <details class="tree-nav__item is-expandable">
+        <summary class="tree-nav__item-title">The Tawny Man Trilogy</summary>
+        <div class="tree-nav__item">
+          <a class="tree-nav__item-title"><i class="icon ion-cube"></i> FOOL'S ERRAND</a>
+          <a class="tree-nav__item-title"><i class="icon ion-ios-book"></i> GOLDEN FOOL</a>
+          <a class="tree-nav__item-title"><i class="icon ion-ios-bookmarks"></i> FOOL'S FATE</a>
+        </div>
+      </details>
+
+      <details class="tree-nav__item is-expandable">
+        <summary class="tree-nav__item-title">The Fitz and the Fool Trilogy</summary>
+        <div class="tree-nav__item">
+          <a class="tree-nav__item-title"><i class="icon ion-ios-bookmarks"></i> FOOL'S ASSASSIN</a>
+          <a class="tree-nav__item-title"><i class="icon ion-ios-book"></i> FOOL'S QUEST</a>
+          <a class="tree-nav__item-title"><i class="icon ion-android-bookmark"></i> Assassin's Fate</a>
+        </div>
+      </details>
+
+
+    </details>
+  </details>
+
+  <details class="tree-nav__item is-expandable">
+    <summary class="tree-nav__item-title">The Soldier Son trilogy</summary>
+    <div class="tree-nav__item">
+      <a class="tree-nav__item-title"><i class="icon ion-edit"></i> SHAMAN'S CROSSING</a>
+      <a class="tree-nav__item-title"><i class="icon ion-paperclip"></i> FOREST MAGE</a>
+    </div>
+  </details>
+
+</nav>
+
+</body>
+</html>
+-->
+<style>
+  .sidenav {
+    OVERFLOW: hidden;
+    BORDER-TOP: black 1px solid;
+    BORDER-RIGHT: black 1px solid;
+    WIDTH: 180px;
+    BACKGROUND:
+      /*#eee*/
+      white;
+    OVERFLOW-X: hidden;
+    BORDER-BOTTOM: black 1px solid;
+    POSITION: fixed;
+    PADDING-BOTTOM: 0px;
+    PADDING-TOP: 0px;
+    PADDING-LEFT: 0px;
+    LEFT: 15px;
+    MARGIN: auto;
+    BORDER-LEFT: black 1px solid;
+    Z-INDEX: 1;
+    TOP: 280px
+  }
+
+  .titleBar {
+    OVERFLOW: hidden;
+    HEIGHT: 50px;
+    WIDTH: 140px;
+    BACKGROUND: #b9bf98;
+    OVERFLOW-X: hidden;
+    POSITION: fixed;
+    COLOR: #ffff00;
+    PADDING-BOTTOM: 0px;
+    PADDING-TOP: 0px;
+    PADDING-LEFT: 0px;
+    LEFT: 10px;
+    Z-INDEX: 1;
+    TOP: 240px
+  }
+
+  .sidenav c {
+    FONT-SIZE: 14px;
+    TEXT-DECORATION: none;
+    COLOR: #2196f3;
+    PADDING-BOTTOM: 6px;
+    PADDING-TOP: 6px;
+    PADDING-LEFT: 0px;
+    MARGIN-LEFT: 5px;
+    DISPLAY: block;
+    PADDING-RIGHT: 8px
+  }
+
+  .sidenav c:hover {
+    COLOR: #064579;
+    background-color: yellow;
+  }
+
+  .sidebarHeader B {
+    FONT-SIZE: 12px;
+    TEXT-DECORATION: none;
+    COLOR: #2196f3;
+    PADDING-BOTTOM: 5px;
+    PADDING-TOP: 5px;
+    PADDING-LEFT: 5px;
+    DISPLAY: block;
+    PADDING-RIGHT: 5px
+  }
+
+  .sidebarFooter B:hover {
+    COLOR: #ccc
+  }
+
+  .sidenav a:hover {
+    COLOR: #064579;
+    background-color: #ccc;
+
+  }
+
+  .ms-webpartzone-cell,
+  .ms-webpart-zone {
+    border-collapse: collapse;
+    overflow-y: hidden;
+  }
+
+
+
+
+
+  .sidenav A {
+    FONT-SIZE: 10px;
+    TEXT-DECORATION: none;
+    COLOR: #2196f3;
+    PADDING-BOTTOM: 3px;
+    PADDING-TOP: 3px;
+    PADDING-LEFT: 8px;
+    MARGIN-LEFT: 15px;
+    DISPLAY: block;
+    PADDING-RIGHT: 8px
+  }
+
+  .sidebarHeader {
+    OVERFLOW: hidden;
+    BORDER-TOP: black 1px solid;
+    BORDER-RIGHT: black 1px solid;
+    WIDTH: 180px;
+    BACKGROUND:
+      /*#eee*/
+      white;
+    OVERFLOW-X: hidden;
+    BORDER-BOTTOM: black 1px solid;
+    POSITION: fixed;
+    PADDING-BOTTOM: 0px;
+    PADDING-TOP: 0px;
+    PADDING-LEFT: 0px;
+    LEFT: 15px;
+    MARGIN: auto;
+    BORDER-LEFT: black 1px solid;
+    Z-INDEX: 1;
+    TOP: 245px
+  }
+
+  .sidebarFooter {
+    OVERFLOW: hidden;
+    BORDER-TOP: black 1px solid;
+    BORDER-RIGHT: black 1px solid;
+    WIDTH: 180px;
+    BACKGROUND:
+      /*#eee*/
+      white;
+    OVERFLOW-X: hidden;
+    BORDER-BOTTOM: black 1px solid;
+    POSITION: fixed;
+    PADDING-BOTTOM: 0px;
+    PADDING-TOP: 0px;
+    PADDING-LEFT: 0px;
+    LEFT: 15px;
+    MARGIN: auto;
+    BORDER-LEFT: black 1px solid;
+    Z-INDEX: 1;
+    TOP: 645px
+  }
+
+  .sidebarFooter A {
+    FONT-SIZE: 10px;
+    TEXT-DECORATION: none;
+    COLOR: #2196f3;
+    PADDING-BOTTOM: 3px;
+    PADDING-TOP: 3px;
+    PADDING-LEFT: 0px;
+    MARGIN-LEFT: 0px;
+    DISPLAY: block;
+    PADDING-RIGHT: 0px
+  }
+
+  .bigHorizontalBar {
+    OVERFLOW: hidden;
+    BORDER-TOP: black 1px solid;
+    HEIGHT: 50px;
+    BORDER-RIGHT: black 1px solid;
+    WIDTH: 1350px;
+    BACKGROUND:
+      /*#eee*/
+      white;
+    OVERFLOW-X: hidden;
+    BORDER-BOTTOM: black 1px solid;
+    PADDING-BOTTOM: 0px;
+    PADDING-TOP: 0px;
+    PADDING-LEFT: 0px;
+    MARGIN: auto;
+    BORDER-LEFT: black 1px solid;
+    Z-INDEX: 1
+  }
+
+  .sidebarWrapper {
+    OVERFLOW: hidden;
+    WIDTH: 180px;
+    BACKGROUND:
+      /*#eee*/
+      white;
+    OVERFLOW-X: hidden;
+    BORDER-BOTTOM: black 1px solid;
+    POSITION: fixed;
+    PADDING-BOTTOM: 0px;
+    PADDING-TOP: 0px;
+    PADDING-LEFT: 0px;
+    LEFT: 15px;
+    MARGIN: auto;
+    BORDER-LEFT: black 1px solid;
+    Z-INDEX: 1;
+    TOP: 280px
+  }
+</style>
+
+<div class="sidebarHeader"><b style="font-size: 15px; text-align: center;">Navigation Menu</b></div>
+<div class="sidenav"><a href="#sectionOne" style="font-size: 14px; margin-left: 0px;">Outlook​​</a>
+  <a href="#CommonlyUsed">Commonly Used Tools and Features</a>
+  <a href="#changeThemes">Change Themes</a>
+  <a href="#IconComparison">Icon Comparison - Visual Guide</a>
+  <!--<a href="#createNewEmail">Create New Email​</a>
+	<a href="#createNewCG">Create New Contact Groups</a>
+	<a href="#tellMeSearchBar">&quot;Tell Me&quot; Search Bar</a>
+	<a href="#peoplePane">People Pane</a> <a href="#navigationPane">Navigation Pane</a> -->
+  <!--
+	<a href="#hTab">Home Tab</a> <a href="#srTab">Send / Receive Tab</a>
+	<a href="#fTab">Folder Tab</a>--> <a href="#AllUnreadMentions">Inbox Changes</a>
+  <!--
+	<a href="#inboxAll">All</a> <a href="#inboxUnread">Unread</a>
+	<a href="#inboxMentions">Mentions</a> --> <a href="#CommonProblems">Common Problems</a>
+  <!--<a href="#verifyPathError">&quot;Cannot Find this file. Verify the path and the file name are correct&quot;</a>--> <a href="#sectionTwo" style="font-size: 14px; margin-left: 0px;">Word</a> <a href="#CommonlyUsedWord">Commonly Used Tools and Features</a><a href="#CommonProblemsWord">Common Problems</a>
+  <!--<a href="#docInfoPanMissing">Document Information Panel Missing</a>--><a href="#iconComparisonWord">Icon Comparison - Visual Guide</a>
+
+  <a href="#sectionThree" style="font-size: 14px; margin-left: 0px;">Excel</a> <a href="#CommonlyUsedExcel">Commonly Used Tools and Features</a><a href="#usefulShortcutsExcel">Useful Shortcuts</a><a href="#CommonProblemsExcel">Common Problems</a><a href="#iconComparisonExcel">Icon Comparison - Visual Guide</a>
+
+
+
+  <span> </span>
+  <div style="border-radius: 25px;">
+    <div class="sidebarFooter"><a href="/workspaces/office2016tips/Pages/default.aspx#mainContent" style="font-size: 15px; text-align: center;">Go To Top</a></div>
+    <style>
+      .ms-rteTable-6 TD.ms-rteTableOddCol-6mod {
+        BORDER-RIGHT: black 1px solid;
+      }
+
+      .ms-rteTable-6 TD.ms-rteTableEvenCol-6mod {
+        BORDER-RIGHT: black 1px solid;
+
+      }
+
+      .ms-rteTable-6 TR.ms-rteTableOddRow-6mod {
+        BACKGROUND-COLOR: #d8d8d8;
+
+      }
+    </style>
+  </div>
+</div>
+<style>
+  .ms-bodyareacell {
+    PADDING-BOTTOM: 0px;
+    PADDING-TOP: 0px;
+    PADDING-LEFT: 53.89px;
+    PADDING-RIGHT: 0px;
+
+  }
+
+  .ms-rteTable-6 TH.ms-rteTableHeaderFirstCol-6mod {
+    BORDER-TOP: #000000 2px solid;
+    BORDER-BOTTOM: #000000 2px solid;
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #2a5598;
+
+  }
+
+  .ms-rteTable-6 TH.ms-rteTableFooterFirstCol-6mod {
+    BORDER-TOP: #000000 2px solid;
+    BORDER-BOTTOM: #000000 2px solid;
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #2a5598;
+  }
+
+  ms-rteTableHeaderRow-6mod {
+    BORDER-TOP: #000000 2px solid;
+    BORDER-BOTTOM: #000000 2px solid;
+    COLOR: #ffffff;
+
+  }
+
+  .ms-rteTable-6 TH.ms-rteTableHeaderFirstCol-6excel {
+    BORDER-TOP: #000000 2px solid;
+    BORDER-BOTTOM: #000000 2px solid;
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #247847;
+  }
+
+  .ms-rteTable-6 TH.ms-rteTableFooterFirstCol-6excel {
+    BORDER-TOP: #000000 2px solid;
+    BORDER-BOTTOM: #000000 2px solid;
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #247847;
+
+  }
+
+  .ms-rteTable-6 TH.ms-rteTableHeaderFirstCol-6excel {
+    BORDER-TOP: #000000 2px solid;
+    BORDER-BOTTOM: #000000 2px solid;
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #247847;
+
+  }
+
+  .ms-rteTable-6 TH.ms-rteTableFooterFirstCol-6excel {
+    BORDER-TOP: #000000 2px solid;
+    BORDER-BOTTOM: #000000 2px solid;
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #247847;
+
+  }
+
+  .s4-wpcell-plain .s4-wpTopTable {
+    border: none;
+    BACKGROUND-COLOR: #ffffff;
+    border: 1px solid black;
+    background-attachment: fixed;
+
+    overflow-x: hidden !important;
+
+  }
+
+  .ms-bodyareacell {
+    vertical-align: top;
+    background-image: url('https://my.guc.com/workspaces/windows10tips/images/funky-lines.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+
+
+
+  }
+
+  body {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 8pt;
+    /* [ReplaceColor(themeColor:"Dark2-Darker")] */
+    color: #676767;
+    /* [ReplaceColor(themeColor:"Light1")] */
+    /*background-color:#add8e6;*/
+    background-image: url('https://my.guc.com/workspaces/windows10tips/images/funky-lines.png');
+    background-repeat: repeat;
+    margin: 0px;
+    padding: 0px;
+    background-attachment: fixed;
+    overflow-y: hidden;
+
+  }
+
+  .ms-PartSpacingVertical {
+    font-size: 1pt;
+    margin-top: 120px;
+    overflow-y: hidden;
+    overflow-x: hidden !important;
+
+  }
+
+
+  .ms-WPBody {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    overflow-y: hidden;
+    overflow-x: hidden !important;
+    left: 50%;
+    top: 50%;
+    width: 81.5vw !important;
+
+
+  }
+
+
+  .ms-rteFontSize-5 a {
+    font-size: 24pt;
+    text-decoration: none !important;
+  }
+
+  ms-rteFontSize-3 ms-rteTableFirstCol-6 a {
+    text-decoration: none !important;
+  }
+
+
+  .ms-rteTableOddRow-6mod a {
+    text-decoration: none !important;
+  }
+
+  .ms-rteTable-6 th.ms-rteTableFirstCol-6 a {
+    font-weight: normal;
+    text-decoration: none !important;
+  }
+
+  .ms-rteThemeForeColor-1-5 a {
+    text-decoration: none !important;
+  }
+
+  .ms-rteThemeForeColor-5-0 a {
+    text-decoration: none !important;
+  }
+
+  .ms-rteTableHeaderFirstCol-6 a {
+    text-decoration: none !important;
+  }
+
+  .ms-rteTableHeaderFirstCol-6mod a {
+    text-decoration: none !important;
+  }
+
+  .word a {
+    text-decoration: none !important;
+    color: rgb(42, 85, 152) !important
+  }
+
+  .word {
+    text-decoration: none !important;
+    color: rgb(42, 85, 152) !important
+  }
+
+  .ms-rteThemeForeColor-1-5WordTextColorMod a {
+    color: rgb(42, 85, 152);
+    text-decoration: none !important;
+    /* YES IT WORKS!!! */
+    /*Dont use "." in html code, only use in class name above" */
+  }
+
+  .ms-rteThemeForeColor-1-5OutLookTextColorMod a {
+    color: #0072bc !important;
+    text-decoration: none !important;
+
+    /*Dont use "." in html code, only use in class name above" */
+  }
+
+  .ms-rteThemeForeColor-1-5ExcelTextColorMod a,
+  .ms-rteThemeForeColor-1-5ExcelTextColorMod strong {
+    color: #247847 !important;
+    text-decoration: none !important;
+
+    /*Dont use "." in html code, only use in class name above" */
+  }
+
+  .noTextDec {
+    text-decoration: none !important;
+  }
+
+
+
+  .ms-rteThemeForeColor-2-2,
+  .ms-rteThemeForeColor-1-5 div,
+  .ms-rteThemeForeColor-1-5,
+  .ms-rteThemeForeColor-1-5 li,
+  .ms-rteThemeForeColor-1-5 ul {
+    color: #676767 !important;
+  }
+</style>
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial;
+    }
+
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+
+    }
+
+
+    .blueEnclosure {
+      width: 1200px;
+      display: table;
+      margin: 0 auto;
+      padding: 30px
+    }
+
+    .topEnclosure {
+      width: 1200px !important;
+      height: auto;
+      display: table;
+      position: relative;
+      margin: auto;
+      background-color: #00A651;
+      border-left: 30px solid #0082BA;
+      padding: 10px;
+      top: 20px !important;
+      Z-INDEX: 1;
+    }
+
+    .topEnclosure p {
+
+      color: #FFFFFF
+    }
+
+    .ieWrapper {
+      width: 1200px !important;
+      height: 128px;
+      display: table;
+      position: relative;
+      margin: 0 auto 0 auto;
+    }
+
+
+    .ieEnclosure {
+      width: 600px !important;
+      height: 20px;
+      display: table;
+      position: relative;
+      margin: 0 auto 0 auto;
+      background-color: #333333;
+      /*border-left: 30px solid #FFDC61;*/
+      border-left: 5px solid #00A651;
+      border-bottom: 5px solid #00A651;
+      border-right: 5px solid #00A651;
+
+      right: 250px;
+      padding: 0px;
+      top: 3px !important;
+    }
+
+
+    .ieEnclosure p {
+
+      color: #FFFFFF;
+      margin: auto;
+    }
+
+
+
+    wrapper {
+      width: 500px;
+      height: 500px;
+      margin: 0 auto;
+      background: #f7f7f7;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -250px;
+      margin-top: -250px;
+    }
+  </style>
